@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: '맑은 고딕', '나눔고딕', sans-serif;
+    }
+
+    /* 배너 규격 700 x 400 */
+    .banner {
+        background: #ccc;
+        width: 700px;
+        height: 400px;
+        position: relative;
+    }
+
+    .banner>video {
+        position: absolute;
+    }
+
+    .banner>header {
+        position: relative;
+        color: white;
+        font-family: 'Courgette', cursive;
+    }
+
+    .banner>.btn_call {
+        position: absolute;
+        display: block;
+        width: 170px;
+        height: 40px;
+        left: 260px;
+        bottom: 80px;
+        background: white;
+        color: black;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 15px;
+    }
+
+    header>h1>span:first-child {
+        font-size: 60px;
+        display: block;
+        position: absolute;
+        left: 300px;
+        top: 77px;
+        text-shadow: 2px 2px 4px #000;
+        opacity: 0;
+        animation-name: title;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+    }
+
+    header>h1>span:last-child {
+        font-size: 100px;
+        display: block;
+        position: absolute;
+        left: 200px;
+        top: 120px;
+        text-shadow: 2px 2px 4px #000;
+        opacity: 0;
+        animation-name: title;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+    }
+
+    .banner > .btn_call {
+        opacity: 0;
+        animation-name: title;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes title {
+        0% {opacity: 0;}
+        15% {opacity: 0;}
+        30% {opacity: 1;}
+        90% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+</style>
+
+<body>
+    <div href="#" class="banner">
+        <video src="./travel2.mp4"
+               autoplay muted
+               loop>
+        </video>
+        <header>
+            <h1>
+                <span>GO!</span>
+                <span>Travel</span>
+            </h1>
+        </header>
+        <a href="#" class="btn_call">여행하기</a>
+    </div>
+</body>
+
+</html>
